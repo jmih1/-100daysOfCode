@@ -1,0 +1,12 @@
+import java.util.Scanner;//import scanner to take input
+
+public static void main(String[] args){
+
+System.out.println("Please enter your name");
+Scanner input = new Scanner(System.in);
+
+String greeting = input.next();
+
+System.out.println("Hello " + greeting);
+
+}
