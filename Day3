@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public static void main(String[] args){
+
+System.out.println("Enter a number you wish to compute the sum to");
+
+Scanner input = new Scanner(System.in);
+
+int number = input.nextInt();
+
+int sum = (number*(number+1))/2;
+
+System.out.println("The sum of integers from 1 up to " + number " + " is " + sum);
+
+}
+
