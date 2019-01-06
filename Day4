@@ -1,0 +1,23 @@
+inport java.util.Scanner;
+
+public static void main(String[] args){
+
+int sum = 0;
+
+
+System.out.println("Enter a number");
+
+Scanner input = new Scanner(System.in);
+
+int n = input.next();
+
+for (int i = 1; i < = n; i++){
+ //sum  = sum + i;(Day3)
+ 
+ if (i % 3 == 0 || i % 5 == 0){
+ sum = sum + i;
+ }
+ }
+ 
+ System.out.println("The sum is " + sum);
+
