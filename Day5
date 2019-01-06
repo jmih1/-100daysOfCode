@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public static void main(String[] args){
+
+int sum = 0;
+int product = 1;
+System.out.println("Enter a number: ");
+
+Scanner input = new Scanner(System.in);
+
+int num = input.nextInt();
+
+System.out.println("Enter 1 to sum or 2 to multiply from 1 up to number");
+
+int choice = input.nextInt();
+
+if (choice == 1){
+  for(int i = 1; i < = sum; i++){
+  sum = sum + i;
+ 
+  }
+  
+  System.out.println("The sum of the numbers from 1 to n is " + sum);
+  }
+  
+else if (choice == 2){
+ for(int i = 1; i < = sum; i++){
+  product = product * i;
+  }
+System.out.println("The product of the numbers from 1 to n is " + product);
+  }
