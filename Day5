@@ -15,7 +15,7 @@ System.out.println("Enter 1 to sum or 2 to multiply from 1 up to number");
 int choice = input.nextInt();
 
 if (choice == 1){
-  for(int i = 1; i < = sum; i++){
+  for(int i = 1; i < = num; i++){
   sum = sum + i;
  
   }
@@ -24,7 +24,7 @@ if (choice == 1){
   }
   
 else if (choice == 2){
- for(int i = 1; i < = sum; i++){
+ for(int i = 1; i < = num; i++){
   product = product * i;
   }
 System.out.println("The product of the numbers from 1 to n is " + product);
