@@ -32,7 +32,7 @@ int choice2 = input.nextInt();
 }
 
 if (choice1 == 1 and choice2 == 1){
-  for(int i = 1; i < = n; i++){
+  for(int i = 1; i < = num; i++){
   sum = sum + i;
  
   }
@@ -41,21 +41,21 @@ if (choice1 == 1 and choice2 == 1){
   }
   
 else if (choice1 == 2 and choice2 == 1){
- for(int i = 1; i < = n; i++){
+ for(int i = 1; i < = num; i++){
   product = product * i;
   }
 System.out.println("The product of the numbers from 1 to n is " + product);
   }
   
   else if (choice1 == 1 and choice2 == 2){
-  for(int i = 1; i < = n; i++){
+  for(int i = 1; i < = num; i++){
    if (i == 3 or i == 5){
   sum = sum + i;
   }
   System.out.println("The sum of the numbers from 1 to n is " + sum);
   }
   else{
-   for(int i = 1; i < = n; i++){
+   for(int i = 1; i < = num; i++){
    if (i == 3 or i == 5){
   procut = product * i;
   }
