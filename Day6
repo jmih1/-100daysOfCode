@@ -1,0 +1,64 @@
+import java.util.*
+
+public static void main(String[] args){
+
+int sum = 0;
+int product = 1;
+System.out.println("Enter a number: ");
+
+Scanner input = new Scanner(System.in);
+
+int num = input.nextInt();
+
+System.out.println("Enter 1 to sum or 2 to multiply from 1 up to number");
+
+int choice1 = input.nextInt();
+
+while (choice1 != 1 || choice1 != 2){
+System.out.println("Enter 1 to sum or 2 to multiply from 1 up to number");
+
+int choice1 = input.nextInt();
+}
+
+
+System.out.println("Enter 1 for with 3s and 5s and 2 without");
+
+int choice2 = input.nextInt();
+
+while (choice2 != 1 || choice2 != 2){
+System.out.println("Enter 1 to sum or 2 to multiply from 1 up to number");
+
+int choice2 = input.nextInt();
+}
+
+if (choice1 == 1 and choice2 == 1){
+  for(int i = 1; i < = n; i++){
+  sum = sum + i;
+ 
+  }
+  
+  System.out.println("The sum of the numbers from 1 to n is " + sum);
+  }
+  
+else if (choice1 == 2 and choice2 == 1){
+ for(int i = 1; i < = n; i++){
+  product = product * i;
+  }
+System.out.println("The product of the numbers from 1 to n is " + product);
+  }
+  
+  else if (choice1 == 1 and choice2 == 2){
+  for(int i = 1; i < = n; i++){
+   if (i == 3 or i == 5){
+  sum = sum + i;
+  }
+  System.out.println("The sum of the numbers from 1 to n is " + sum);
+  }
+  else{
+   for(int i = 1; i < = n; i++){
+   if (i == 3 or i == 5){
+  procut = product * i;
+  }
+ System.out.println("The product of the numbers from 1 to n is " + product);
+  }
+  
