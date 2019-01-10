@@ -2,7 +2,33 @@ import java.lang.Math;
 class Solution {
     public int mySqrt(int x) {
         
-        return (int) Math.sqrt(x);
+       // return (int) Math.sqrt(x);
+       
+      
+      //this works too
+        int halfx = x/2;
         
+        int ans = 0;
+        
+        int i = 0;
+        
+        
+        while(i <= halfx){
+            System.out.println(i);
+        if (i * i >  x){
+            
+         ans = i - 1;
+            break;
+                }
+            
+        if (i * i == x) return i;
+            
+            i++;
+        }
+      
+        return ans;
     }
+    
+    
+
 }
