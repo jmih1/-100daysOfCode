@@ -1,0 +1,52 @@
+class Solution {
+    public int maxProfit(int[] prices) {
+        
+    /*    if (prices.length == 0) return 0;
+        int l = 0;
+        int r = prices.length-1;
+        int maxProfit = prices[r]-prices[l];
+        int count = 0;
+        
+        while (l < r){
+         //   System.out.println(maxProfit);
+            if (prices[l+1] < prices[l]) l++;
+            if (prices[r] < prices[r-1]) r--;
+         //   System.out.println("r"+r +" l" + l);
+            if (l < r) maxProfit = prices[r]-prices[l];
+            
+            
+            if (++count >= prices.length) break;
+        }
+        
+        if (maxProfit < 0) return 0;
+        
+       return maxProfit; */
+        
+        int left = 0;
+        int right = prices.length - 1;
+        int min = 100000;
+        int max = -110000;
+        int maxProfit = 0; 
+        int minIndex = 0;
+        
+        while (left < right ){
+            if (prices[left] < min) {
+                min = prices[left];
+                minIndex = left;
+                
+            }
+            left++;
+        }
+        
+        while (right >  minIndex){
+            if (prices[right] > max) max = prices[right]; 
+            right--;
+            }
+        
+         maxProfit = max - min;
+        if (maxProfit <= 0) return 0;
+        
+        return maxProfit;
+        
+    }
+}
